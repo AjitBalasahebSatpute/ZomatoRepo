@@ -1,0 +1,102 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<div class="mount">
+    <div class="singup-container">
+        <form #frm="ngForm" (ngSubmit)="onSubmit(frm)">
+          <h2 style="text-align: start; margin-bottom:20px ; "><u>Login</u> <i class='bx bx-lock-alt'></i></h2>
+          <div class="userinput">
+              <div class="user-details" ngModelGroup="userdetails">
+                <div class="data-countrycode">
+                    <input type="number" ngModel name="countryCode" placeholder="+ 91"required>
+              </div>  
+                <div class="data-input">
+                         <input  type="text" ngModel name="contactNumber" placeholder="Mobile Number" required >
+                  </div>
+                  
+                  
+              </div>
+                <div class="btn">
+                    <button (click)="OTPGeneration()" [disabled]="!frm.valid">Send OTP</button>
+                    
+                         <!-- validation screen wil pop up on sent OTP and data will be at stage state -->
+                </div>
+             </div>
+        </form>
+      
+        <!--line Breaker  -->
+        <div class="line"><div class="break" dis></div>
+        <div class="or"><h5>Or</h5></div>
+        <div class="break"></div> </div>
+        
+      
+        <div class="federation-services">
+            <div class="gmail"><button>continue with Email</button></div>
+            <div class="google"><button>log in with google</button></div>
+        </div>
+      
+        <div class="login-redirect">
+         <p style="display: inline;"> New to Zomato? </p> <a routerLink="/singup"> Sing Up</a>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="mount">
+
+    <div class="form-container" [ngClass]="">
+        <form #frm="ngForm" (ngSubmit)="onSubmit(frm)">
+            <div class="login-container">
+                <h2 style="text-align: start; margin-bottom:20px ; ">LogIn</h2>
+        
+                <div class="login-details">
+                    <div class="phone-number-input">
+                        <div class="country-code"> <input type="number" ngModel name="countryCode" placeholder="Counrty code" required></div>
+                        <div class="number-input" ><input  type="number" ngModel name="contactNumber" placeholder="Mobile Number" required ></div>
+                    </div>
+                    <div class="OTP-button">
+                        <button (click)="OTPGeneration()" [disabled]="!frm.valid">Send OTP</button>
+                        
+                validation screen wil pop up on sent OTP and data will be at stage state
+                   </div>
+                </div>
+        
+                <hr>
+        
+                <div class="federation-service">
+                    <div class="gmail"><button>continue with Email</button></div>
+                    <div class="google"><button>log in with google</button></div>
+                </div>
+        
+                <p>New to Zomato? <a routerLink="/singup">Create account</a></p>
+            </div>
+        
+        </form>
+    </div>
+</div> -->

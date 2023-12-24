@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;padding: 0;
+
+}
+
+.home-container{
+    display: grid;
+    /* background-color: black; */
+    grid-template-rows: auto auto auto;
+    
+    align-items: center;
+    /* justify-content: center; */
+    margin: 0;
+    padding: 0;
+   
+   /* color: black; */
+   font-family: 'Roboto', sans-serif;
+   width: inherit;
+   height: inherit;
+
+}
+.home-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-size: 1.4rem;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Utility/Images/HomePage-img.avif);
+    /* width: 100%; */
+    height: 100vh
+    
+}
+.nav-btn{
+    position: relative;
+   align-self: flex-end;
+}
+nav ul {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    margin-top: 4vh;
+    display: flex;
+    column-gap: 1.5vh;
+    float: right;
+    margin-right: 30vh;
+    list-style-type: none;
+}
+ul li {
+padding: 10px;
+font-size: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+.heading{
+    position: relative;
+    top: 30%;
+    text-align: center;
+
+}
+.brand-name h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 10rem;
+    font-weight: 1000;
+}
+
+.home-img .moto {
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.para{
+    
+    margin-top: 30px;
+    justify-self: center;
+    text-align: center;
+    color: black;
+}
+.para h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+.para p{
+    font-size: 1.2rem;
+    padding : 3vw 15vw;
+}
+
+a{
+    cursor:pointer;
+  }
+
+ 
+  /* .resto-list:hover{
+    transform: translateY(2px);
+  } */
+
+  .resto-list{
+    padding-left: 50px;
+  }

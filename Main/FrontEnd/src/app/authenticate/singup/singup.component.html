@@ -1,0 +1,40 @@
+<div class="mount">
+    <div class="singup-container">
+        <form #signupFrm="ngForm" (ngSubmit)="OnSingup(signupFrm)">
+          <h2 style="text-align: start; margin-bottom:20px ; "><u>SignUp</u></h2>
+          <div class="userinput">
+              <div class="user-details" ngModelGroup="userdetails">
+                  <div class="data">
+                    <label for="username"><i class='bx bx-user'></i></label>
+                  <input type="text" ngModel name="username" placeholder="Full name" required  >
+                  </div>
+                  <div class="data">
+                    <label for="username"><i class='bx bx-envelope' ></i> </label>
+                  <input type="email" ngModel name="email" placeholder="Email">
+                  </div>
+              </div>
+              <div class="check-box">
+                <span> <input type="checkbox" ngModel name="agree" value="true" required>   </span> 
+                <span><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quaerat.</p></span>
+              </div>
+              <div class="btn">
+                  <button class="create" [disabled]="!signupFrm.valid"> Create Account</button>
+              </div>
+             </div>
+        </form>
+      
+        <!--line Breaker  -->
+        <div class="line"><div class="break" dis></div>
+        <div class="or"><h5>Or</h5></div>
+        <div class="break"></div> </div>
+      
+        <div class="federation-services">
+          <a href=""><button>Continue with Google</button></a>
+         <a href=""> <button>Continue with Phone Number</button></a>
+        </div>
+      
+        <div class="login-redirect">
+        <p style="display: inline; font-weight: 500;">Already have account?</p> <a routerLink="/login"> Login</a>
+        </div>
+      </div>
+</div>
