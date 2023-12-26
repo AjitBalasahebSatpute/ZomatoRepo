@@ -38,6 +38,7 @@ input{
     border: none;
     border-radius: 8px;
     box-shadow:  0px 0px 20px rgba(0, 0, 0, 1);
+    text-decoration: none;
 }
 .userinput{
     margin: 50PX 0px;
