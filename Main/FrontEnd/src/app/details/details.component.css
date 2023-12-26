@@ -1,0 +1,11 @@
+.main-details-container{
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details-header{
+    position:absolute;
+    top: 0%;
+}

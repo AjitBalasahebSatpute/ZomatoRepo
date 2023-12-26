@@ -16,14 +16,20 @@
     background-color: gray;
     padding: 20px 30px;
     display: flex;
+    /* align-items: center; */
+    
+    /* justify-content: space-between; */
     flex-direction: column;
-    width: 100vw;
+    width: inherit;
 }
 .quick-links{
 
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    /* justify-content: space-between; */
 }
 
 .social-media-links{
