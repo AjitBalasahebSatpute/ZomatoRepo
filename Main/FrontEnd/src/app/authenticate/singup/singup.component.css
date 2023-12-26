@@ -1,7 +1,7 @@
 .mount{
     margin-bottom: 20px;
     width: 100vw;
-    height: 65vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -15,7 +15,7 @@
     /* border: 2px solid black; */
     background-color: aqua;
     max-width: 450px;
-    max-height: 500px;
+    max-height: 550px;
     font-size: 22px;
 }
 

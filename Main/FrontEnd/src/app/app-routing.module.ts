@@ -4,11 +4,17 @@ import { LoginComponent } from './Authenticate/login/login.component';
 import { SingupComponent } from './Authenticate/singup/singup.component';
 
 import {HomeComponent} from './home/home.component';
+import { DetailsComponent } from './details/details.component';
+import path from 'path';
+import { homedir } from 'os';
 
 const routes: Routes = [
-  {path:'', pathMatch:'full', component:HomeComponent},
+  {path:'', pathMatch:'full', redirectTo:'home'},
+  {path:'home', component:HomeComponent},
   {path:'login',component:LoginComponent},
-  {path:'singup', component:SingupComponent}
+  {path:'singup', component:SingupComponent},
+  {path:':id', component: DetailsComponent}
+  // 
 ];
 
 @NgModule({

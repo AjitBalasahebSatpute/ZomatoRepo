@@ -10,6 +10,9 @@ import { ListService } from './Services/List.service';
 import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './Authenticate/login/login.component';
 import { SingupComponent } from './Authenticate/singup/singup.component';
+import { DetailsComponent } from './details/details.component';
+import { MainContentComponent } from './details/main-content/main-content.component';
+import { DetailsHeaderComponent } from './details/details-header/details-header.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { SingupComponent } from './Authenticate/singup/singup.component';
     ListCardComponent,
     FooterComponent,
     LoginComponent,
-    SingupComponent
+    SingupComponent,
+    DetailsComponent,
+    MainContentComponent,
+    DetailsHeaderComponent
   ],
   imports: [
     BrowserModule,
