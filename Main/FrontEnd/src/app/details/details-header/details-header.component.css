@@ -3,11 +3,13 @@
     display: flex;
     padding : 0px 100px;
     width: inherit;
-    height: 100px;
+    height: inherit;
     align-items: center;
     justify-content: center;
     column-gap: 50px;
     /* border: 3px solid red; */
+    /* background-color: black; */
+    
 
 }
 

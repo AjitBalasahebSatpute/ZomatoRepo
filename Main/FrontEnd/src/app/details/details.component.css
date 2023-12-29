@@ -1,11 +1,20 @@
 .main-details-container{
-    width: inherit;
+    width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
 }
-.details-header{
+.header{
+    text-align: center;
+    height: 18%;
     position:absolute;
     top: 0%;
+}
+.details-container{
+    align-self: last baseline;
+    border: 3px solid green;
+    height: 100%;
+    width: 100%;
 }

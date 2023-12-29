@@ -38,6 +38,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\ASUS\OneDrive\Desktop\Test\ZomatoRepo\Main\BackEnd\SIngupAPI\SIngupAPI"/>
+			<item value="C:\Users\ASUS\OneDrive\Desktop\Test\ZomatoRepo\Main\BackEnd\SingUpAPI\SIngupAPI"/>
+			<item value="C:\Users\ASUS\OneDrive\Desktop\Test\ZomatoRepo\Main\BackEnd\SingUpAPI"/>
 			<item value="C:\Users\ASUS\OneDrive\Desktop\Test\ZomatoRepo\Main\BackEnd\LoginAPI"/>
 		</list>
 	</section>

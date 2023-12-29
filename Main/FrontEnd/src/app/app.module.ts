@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import{ FormsModule} from '@angular/forms'
+import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -11,8 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './Authenticate/login/login.component';
 import { SingupComponent } from './Authenticate/singup/singup.component';
 import { DetailsComponent } from './details/details.component';
-import { MainContentComponent } from './details/main-content/main-content.component';
 import { DetailsHeaderComponent } from './details/details-header/details-header.component';
+
 
 @NgModule({
   declarations: [
@@ -24,13 +25,15 @@ import { DetailsHeaderComponent } from './details/details-header/details-header.
     LoginComponent,
     SingupComponent,
     DetailsComponent,
-    MainContentComponent,
     DetailsHeaderComponent
+    
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(),
