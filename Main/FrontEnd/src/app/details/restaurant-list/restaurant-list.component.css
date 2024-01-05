@@ -1,0 +1,14 @@
+.list-container{
+    padding: 15px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 30px;
+    position: relative;
+    justify-content: stretch;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+   
+}

@@ -1,5 +1,5 @@
 <div class="mount">
-    <div class="singup-container">
+    <div class="singup-container" *ngIf="!isverification">
         <form #signupFrm="ngForm" (ngSubmit)="OnSingup(signupFrm)">
           <h2 style="text-align: start; margin-bottom:20px ; "><u>SignUp</u></h2>
           <div class="userinput">
@@ -18,7 +18,8 @@
                 <span><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quaerat.</p></span>
               </div>
               <div class="btn">
-                  <button class="create" [disabled]="!signupFrm.valid"> Create Account</button>
+                  <button  [disabled]="!signupFrm.valid" [ngClass]="{disable:!signupFrm.valid,
+                                                                     create : signupFrm.valid }"> Create Account</button>
               </div>
              </div>
         </form>

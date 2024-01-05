@@ -52,10 +52,18 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
 		<dependency>
         <groupId>com.vonage</groupId>
         <artifactId>client</artifactId>
         <version>[6.1.0,7.0.0)</version>
+    </dependency>
+    
+    <!-- Apache HttpClient -->
+    <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>4.5.13</version> <!-- Use the latest version available -->
     </dependency>
 	</dependencies>
 

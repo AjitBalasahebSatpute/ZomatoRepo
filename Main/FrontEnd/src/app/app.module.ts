@@ -13,6 +13,9 @@ import { LoginComponent } from './Authenticate/login/login.component';
 import { SingupComponent } from './Authenticate/singup/singup.component';
 import { DetailsComponent } from './details/details.component';
 import { DetailsHeaderComponent } from './details/details-header/details-header.component';
+import { OTPVarificationComponent } from "./Pop-up's/otp-varification/otp-varification.component";
+import { RestaurantListComponent } from './details/restaurant-list/restaurant-list.component';
+import { RestaurentCardComponent } from './details/Restaurant-list/restaurent-card/restaurent-card.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { DetailsHeaderComponent } from './details/details-header/details-header.
     LoginComponent,
     SingupComponent,
     DetailsComponent,
-    DetailsHeaderComponent
+    DetailsHeaderComponent,
+    OTPVarificationComponent,
+    RestaurantListComponent,
+    RestaurentCardComponent
     
     
   ],
