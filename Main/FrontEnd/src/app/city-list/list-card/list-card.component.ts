@@ -10,4 +10,9 @@ export class ListCardComponent {
 
   @Input('cityDetails') cityObj!:cityDetails; 
 
+  constructor(){
+    // console.log("---------------------------------------------")
+    // console.log(this.cityObj);
+  }
+
 }

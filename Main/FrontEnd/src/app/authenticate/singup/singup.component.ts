@@ -19,7 +19,7 @@ export class SingupComponent {
 
   userinput !:SingUpData;
   isAgree:boolean=false;
-  
+  isverification:boolean=false;
   constructor(private service:AuthService){
     // this.userinput={username:"Amruta",email:'Amruta@gmail.com',agree:true};
     // console.log(this.agree);

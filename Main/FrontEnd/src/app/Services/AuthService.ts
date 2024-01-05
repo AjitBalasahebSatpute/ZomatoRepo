@@ -13,6 +13,6 @@ export class AuthService{
     constructor(private http:HttpClient){}
 
     singupCheck(Data:SingUpData){
-        return this.http.post<any>('http://localhost:8080/user/singup',Data);
+        return this.http.post<any>('http://localhost:1010/user/singup',Data);
     }
 }

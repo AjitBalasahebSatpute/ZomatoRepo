@@ -1,62 +1,19 @@
 import { Injectable } from "@angular/core";
+import {Observable} from 'rxjs';
 import { cityDetails } from "../Model/city.model";
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class ListService{
 
-    citylist!:cityDetails[];
-    cityList():cityDetails[]{
 
-        this.citylist=[
-            new cityDetails(1,'Pandharpur'),
-            new cityDetails(1,'Solapur'),
-            new cityDetails(1,'Pune'),
-            new cityDetails(1,'Mohol'),
-            new cityDetails(1,'Mumabai'),
-            new cityDetails(1,'Hyderbad'),
-            new cityDetails(1,'Nashik'),
-            new cityDetails(1,'Panvel'),
-            new cityDetails(1,'Pimpri'),
-        
-            new cityDetails(1,'Pandharpur'),
-            new cityDetails(1,'Solapur'),
-            new cityDetails(1,'Pune'),
-            new cityDetails(1,'Mohol'),
-            new cityDetails(1,'Mumabai'),
-            new cityDetails(1,'Hyderbad'),
-            new cityDetails(1,'Nashik'),
-            new cityDetails(1,'Panvel'),
-            new cityDetails(1,'Pimpri'),
-            new cityDetails(1,'Pandharpur'),
-            new cityDetails(1,'Solapur'),
-            new cityDetails(1,'Pune'),
-            new cityDetails(1,'Mohol'),
-            new cityDetails(1,'Mumabai'),
-            new cityDetails(1,'Hyderbad'),
-            new cityDetails(1,'Nashik'),
-            new cityDetails(1,'Panvel'),
-            new cityDetails(1,'Pimpri'),
-            new cityDetails(1,'Pandharpur'),
-            new cityDetails(1,'Solapur'),
-            new cityDetails(1,'Pune'),
-            new cityDetails(1,'Mohol'),
-            new cityDetails(1,'Mumabai'),
-            new cityDetails(1,'Hyderbad'),
-            new cityDetails(1,'Nashik'),
-            new cityDetails(1,'Panvel'),
-            new cityDetails(1,'Pimpri'),
-            new cityDetails(1,'Pandharpur'),
-            new cityDetails(1,'Solapur'),
-            new cityDetails(1,'Pune'),
-            new cityDetails(1,'Mohol'),
-            new cityDetails(1,'Mumabai'),
-            new cityDetails(1,'Hyderbad'),
-            new cityDetails(1,'Nashik'),
-            new cityDetails(1,'Panvel'),
-            new cityDetails(1,'Pimpri'),    
-        
-        ];
+    constructor(private http:HttpClient){
 
-        return this.citylist;
+    }
+    // list!:cityDetails[];
+
+    cityList():Observable <any>
+    {
+        return this.http.get("http://localhost:1011/city/get");
     }
 }

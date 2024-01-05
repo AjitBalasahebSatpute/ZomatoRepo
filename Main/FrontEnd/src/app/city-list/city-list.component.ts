@@ -11,10 +11,28 @@ export class CityListComponent implements OnInit {
 
     cityList !: cityDetails[];
 
-    constructor(private listService:ListService){}
+    constructor(private listService:ListService){
+    
+    }
     
     ngOnInit(): void {
-      this.cityList=this.listService.cityList();
+      this.listService.cityList().subscribe(
+
+        (response) =>{
+          // console.log(response[0].cityName);
+          this.cityList= response;
+          console.log(this.cityList); 
+          
+        },
+        (error:Error) =>{
+          console.log("we mate error!",error.message);
+        }
+        
+        
+      );
   }
+
+
+
 
 }

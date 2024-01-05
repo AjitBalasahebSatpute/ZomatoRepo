@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+.card-container{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    align-content: center;
+    width: 450px;
+    height: 500px;
+    /* border: 2px solid black; */
+    row-gap: 10px;
+    border-radius: 20px;
+    /* margin: 20px; */
+}
+.dish-img{
+    border-radius: 20px 20px 0px 0px;
+    width: inherit;
+    height: 100%;
+    /* max-height: inherit ; */
+    background-image: url("https://b.zmtcdn.com/data/pictures/chains/4/3400934/f6e6aba198dcd8848208a92b322d4a93_o2_featured_v2.jpg?output-format=webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text-details{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+
+}
+.text{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* column-gap: 30px; */
+}
+.distance{
+    padding-right: 25px;
+    align-self: flex-end;
+}
+.break{
+    width: inherit;
+    height: 5px;
+    background-color: gray;
+}
+.delivery-note{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.delivery-note img{
+    width: 80%;
+}
