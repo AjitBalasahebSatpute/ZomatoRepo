@@ -15,7 +15,7 @@ import { DetailsComponent } from './details/details.component';
 import { DetailsHeaderComponent } from './details/details-header/details-header.component';
 import { OTPVarificationComponent } from "./Pop-up's/otp-varification/otp-varification.component";
 import { RestaurantListComponent } from './details/restaurant-list/restaurant-list.component';
-import { RestaurentCardComponent } from './details/Restaurant-list/restaurent-card/restaurent-card.component';
+import { RestaurentCardComponent } from './details/restaurant-list/restaurent-card/restaurent-card.component';
 
 
 @NgModule({
