@@ -1,3 +1,4 @@
 <div class="list-container">
-    <app-restaurent-card *ngFor="let item of [].constructor(10)"></app-restaurent-card>
+    <!-- <app-restaurent-card *ngFor="let item of [].constructor(10)"></app-restaurent-card> -->
+    <app-restaurent-card *ngFor="let resto of restaurentList" [restaurentCard]="resto" ></app-restaurent-card>
 </div>

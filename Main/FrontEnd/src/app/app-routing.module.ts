@@ -14,7 +14,7 @@ const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'login',component:LoginComponent},
   {path:'singup', component:SingupComponent},
-  {path:':id', component: DetailsComponent},
+  {path:':city/:pincode', component: DetailsComponent},
   {path:'verify',component:OTPVarificationComponent}
   // 
 ];
