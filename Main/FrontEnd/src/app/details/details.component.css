@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     box-sizing: content-box;
+    
 }
 .header{
     text-align: center;
@@ -19,13 +20,13 @@
 
 }
 .details-container{
-    text-align: center;
-    /* display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    align-self: last baseline;
-    border: 3px solid green; */
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px;
+    text-align: center;
     height: 100%;
     width: 100%;
 }

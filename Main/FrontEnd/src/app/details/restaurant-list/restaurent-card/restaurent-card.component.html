@@ -1,18 +1,18 @@
 <div class="card-container">
     <div class="dish-img">
-        <img src="" alt="">
+        <img [src]="restaurentCard.imagePath" alt="">
     </div>
     <div class="text-details">
-        <div class="text">
-            <div><h2>New Pizza King</h2></div>
-            <div><p>rating 4.2</p></div>
+        <div class="text1">
+            <div><h2>{{restaurentCard.restaurentName}}</h2></div>
+            <div><p>rating {{restaurentCard.rating}}</p></div>
         </div>
-        <div class="text">
-            <div><p>pizza, Fast Food</p></div>
-            <div><p> $30 for one</p></div>
+        <div class="text2">
+            <div *ngFor="let item of restaurentCard.speciality" class="sp">{{item}}</div>
+            <div class="sec2"><p> ${{restaurentCard.price}} for one</p></div>
         </div>
     </div>
-    <div class="distance"><p>28 min</p></div>
+    <div class="distance"><p>{{restaurentCard.distance}} min</p></div>
     <div class="break"></div>
     <div class="delivery-note">
         <div class="tag"><img src="https://b.zmtcdn.com/data/o2_assets/695598f38d29d0e5d3f8ffe57cfdb94c1613145422.png?output-format=webp" alt=""></div>
