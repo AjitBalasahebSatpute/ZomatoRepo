@@ -5,10 +5,10 @@
     <div class="text-details">
         <div class="text1">
             <div><h2>{{restaurentCard.restaurentName}}</h2></div>
-            <div><p>rating {{restaurentCard.rating}}</p></div>
+            <div class="rating"><p>{{restaurentCard.rating}} <i class='bx bxs-star'></i></p></div>
         </div>
         <div class="text2">
-            <div *ngFor="let item of restaurentCard.speciality" class="sp">{{item}}</div>
+            <div *ngFor="let item of restaurentCard.speciality" class="sp">{{item}} </div>
             <div class="sec2"><p> ${{restaurentCard.price}} for one</p></div>
         </div>
     </div>
