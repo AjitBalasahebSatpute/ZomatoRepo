@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+.foodfilter-container{
+    /* width: 100vw; */
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    height:inherit;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+   
+
+}
+.sec1{
+    align-self: center;
+    justify-self: center;
+    box-sizing: border-box;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgba(59, 58, 58, 0.051);
+}
+
+.sec2{
+    margin-top: 15px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.heading {
+    align-self: flex-start;
+    justify-self: flex-start;
+}
+.heading h2 {
+    font-size: 35px;
+    font-weight: 300;
+}
+.dishes{
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap:30px;
+}

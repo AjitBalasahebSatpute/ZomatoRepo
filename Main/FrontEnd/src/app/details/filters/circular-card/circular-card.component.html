@@ -1,0 +1,7 @@
+<a href="#">
+    <div class="circular-card">
+        <div class="image"><img [src]="inputeData.imagePath" alt=""></div>
+        <div class="name"><h2>{{inputeData.name}}</h2></div>
+        <div class="distance" *ngIf="inputeData.distance"> {{inputeData.distance}} min</div>
+    </div>
+</a>

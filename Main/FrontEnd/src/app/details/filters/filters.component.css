@@ -1,0 +1,10 @@
+.filter-container{
+    width: inherit;
+    height: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    row-gap: 10px;  
+    justify-content: flex-start;
+}  

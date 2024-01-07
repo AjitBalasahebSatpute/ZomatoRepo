@@ -16,6 +16,11 @@ import { DetailsHeaderComponent } from './details/details-header/details-header.
 import { OTPVarificationComponent } from "./Pop-up's/otp-varification/otp-varification.component";
 import { RestaurantListComponent } from './details/restaurant-list/restaurant-list.component';
 import { RestaurentCardComponent } from './details/restaurant-list/restaurent-card/restaurent-card.component';
+import { FiltersComponent } from './details/filters/filters.component';
+import { ParameterbasedFilerComponent } from './details/filters/parameterbased-filer/parameterbased-filer.component';
+import { FoodbasedFilterComponent } from './details/filters/foodbased-filter/foodbased-filter.component';
+import { CircularCardComponent } from './details/filters/circular-card/circular-card.component';
+
 
 
 @NgModule({
@@ -31,7 +36,11 @@ import { RestaurentCardComponent } from './details/restaurant-list/restaurent-ca
     DetailsHeaderComponent,
     OTPVarificationComponent,
     RestaurantListComponent,
-    RestaurentCardComponent
+    RestaurentCardComponent,
+    FiltersComponent,
+    ParameterbasedFilerComponent,
+    FoodbasedFilterComponent,
+    CircularCardComponent
     
     
   ],

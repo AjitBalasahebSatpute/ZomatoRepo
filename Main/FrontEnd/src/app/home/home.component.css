@@ -8,15 +8,11 @@
 
 .home-container{
     display: grid;
-    /* background-color: black; */
     grid-template-rows: auto auto auto;
     
     align-items: center;
-    /* justify-content: center; */
     margin: 0;
     padding: 0;
-   
-   /* color: black; */
    font-family: 'Roboto', sans-serif;
    width: inherit;
    height: inherit;

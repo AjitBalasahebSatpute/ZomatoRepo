@@ -1,0 +1,18 @@
+<div class="foodfilter-container">
+    <section class="sec1">
+        <div class="heading">
+            <h2>Inspiration for your first order</h2>
+        </div>
+        <div class="dishes">
+            <app-circular-card *ngFor="let dish of SelectiveFood" [FillData]="dish"></app-circular-card>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="heading">
+            <h2>Top brands for you</h2>
+        </div>
+        <div class="dishes">
+            <app-circular-card *ngFor="let brand of topBrand" [FillData]="brand"></app-circular-card>
+        </div>
+    </section>
+</div>
