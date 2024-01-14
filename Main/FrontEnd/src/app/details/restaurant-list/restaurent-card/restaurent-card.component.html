@@ -1,6 +1,6 @@
 <div class="card-container">
     <div class="dish-img">
-        <img [src]="restaurentCard.imagePath" alt="">
+        <img [src]="restaurentCard.imagePath" alt="Restaurent Images" loading="lazy" >
     </div>
     <div class="text-details">
         <div class="text1">
@@ -8,7 +8,7 @@
             <div class="rating"><p>{{restaurentCard.rating}} <i class='bx bxs-star'></i></p></div>
         </div>
         <div class="text2">
-            <div *ngFor="let item of restaurentCard.speciality" class="sp">{{item}} </div>
+            <div *ngFor="let item of restaurentCard.speciality" class="sp"><p>{{item}}</p> </div>
             <div class="sec2"><p> ${{restaurentCard.price}} for one</p></div>
         </div>
     </div>
