@@ -12,17 +12,19 @@ import { error } from 'node:console';
   styleUrl: './restaurant-list.component.css'
 })
 export class RestaurantListComponent implements OnInit{
-  restaurentList!:[RestaurentModel];
+  restaurentList!:RestaurentModel[];
   constructor(private listService:ListService){}
   ngOnInit(): void {
-  this.listService.restaurentList().subscribe(
-    (data)=>{
-      this.restaurentList=data;
-    },
-    (error:Error)=>{
-      console.log(error.message)
-    }
-  )
+  // this.listService.restaurentList().subscribe(
+  //   (data)=>{
+  //     this.restaurentList=data;
+  //   },
+  //   (error:Error)=>{
+  //     console.log(error.message)
+  //   }
+  // )
+  this.restaurentList=this.listService.restaurentListService();
+  console.log(this.restaurentList)
   }
 
 

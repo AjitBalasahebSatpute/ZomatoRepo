@@ -20,6 +20,7 @@ import { FiltersComponent } from './details/filters/filters.component';
 import { ParameterbasedFilerComponent } from './details/filters/parameterbased-filer/parameterbased-filer.component';
 import { FoodbasedFilterComponent } from './details/filters/foodbased-filter/foodbased-filter.component';
 import { CircularCardComponent } from './details/filters/circular-card/circular-card.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -40,7 +41,8 @@ import { CircularCardComponent } from './details/filters/circular-card/circular-
     FiltersComponent,
     ParameterbasedFilerComponent,
     FoodbasedFilterComponent,
-    CircularCardComponent
+    CircularCardComponent,
+    NotFoundComponent
     
     
   ],

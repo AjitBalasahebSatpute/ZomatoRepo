@@ -56,7 +56,7 @@ export class FoodbasedFilterComponent {
       name:"McDonald's",
       imagePath:'https://b.zmtcdn.com/data/brand_creatives/logos/775f928725d1a9dd80422632de22c224_1611377090.png?output-format=webp',
       brandID:1,
-      distance:1
+      distance:14
     },
     {
       name:"Burger King",

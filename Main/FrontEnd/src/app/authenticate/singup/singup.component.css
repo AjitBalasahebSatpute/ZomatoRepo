@@ -65,8 +65,9 @@ input{
 
 .btn button {
     font-size: 20px;
-    color: white;
-    background-color: gray;
+   border-radius: 15px;
+    /* color: white; */
+    /* background-color: gray; */
     /* background-color: white; */
     box-shadow:  0px 0px 20px rgba(2, 198, 219, 0.8);
     padding: 10px;
@@ -122,6 +123,14 @@ a{
 }
 
 .disable{
-    background-color: black; 
+    opacity: 50%;
+    border: none;
+    background-color: green; 
+    color: white;
+}
+.create{
+    border: none;
+    /* background-color: white; */
+    background-color: rgb(31, 208, 31);
     color: white;
 }
