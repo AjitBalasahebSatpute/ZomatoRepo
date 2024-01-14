@@ -1,4 +1,4 @@
-<div class="card-container">
+<div class="card-container" *ngIf="!(restaurentCard.restaurentName==='Default')">
     <div class="dish-img">
         <img [src]="restaurentCard.imagePath" alt="Restaurent Images" loading="lazy" >
     </div>
