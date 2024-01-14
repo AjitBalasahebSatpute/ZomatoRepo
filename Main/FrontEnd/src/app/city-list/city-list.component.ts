@@ -21,7 +21,7 @@ export class CityListComponent implements OnInit {
         (response) =>{
           // console.log(response[0].cityName);
           this.cityList= response;
-          console.log(this.cityList); 
+          // console.log(this.cityList); 
           
         },
         (error:Error) =>{
