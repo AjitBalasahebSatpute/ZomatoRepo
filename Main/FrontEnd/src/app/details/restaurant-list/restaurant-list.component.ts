@@ -1,8 +1,9 @@
-import { Component,OnInit } from '@angular/core';
+import { Component,OnChanges,OnDestroy,OnInit, SimpleChanges } from '@angular/core';
 import { RestaurentModel } from '../../Model/Restaurent-card';
 import { ListService } from '../../Services/List.service';
-import {Observable} from 'rxjs'
+import {Observable, Subscription} from 'rxjs'
 import { error } from 'node:console';
+import { Params } from '@angular/router';
 
 
 
@@ -11,21 +12,19 @@ import { error } from 'node:console';
   templateUrl: './restaurant-list.component.html',
   styleUrl: './restaurant-list.component.css'
 })
-export class RestaurantListComponent implements OnInit{
-  restaurentList!:RestaurentModel[];
+export class RestaurantListComponent implements OnInit , OnDestroy{
+  restaurentList:RestaurentModel[]=[];
+  // restaurentList:RestaurentModel[]=new loca
+  listSub= new Subscription();
+
   constructor(private listService:ListService){}
-  ngOnInit(): void {
-  // this.listService.restaurentList().subscribe(
-  //   (data)=>{
-  //     this.restaurentList=data;
-  //   },
-  //   (error:Error)=>{
-  //     console.log(error.message)
-  //   }
-  // )
-  this.restaurentList=this.listService.restaurentListService();
+  ngOnInit(): void { // sends the request to service to preper the list and set subject value  
+    this.listService.restaurentListService(this.listService.pincode); 
+    this.listSub= this.listService.RestoListSubject.subscribe((data:RestaurentModel[])=>{this.restaurentList=data}); // getting this value from list (centralised location) 
   console.log(this.restaurentList)
   }
+
+  ngOnDestroy(): void {this.listSub.unsubscribe();}
 
 
 
